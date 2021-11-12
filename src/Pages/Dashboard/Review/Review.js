@@ -12,7 +12,7 @@ const Review = () => {
         }
 
         else {
-            axios.post('http://localhost:5000/review', data)
+            axios.post('https://frozen-coast-33750.herokuapp.com/review', data)
                 .then(res => {
                     if (res.data.insertedId) {
                         alert('Service has been added successfully')

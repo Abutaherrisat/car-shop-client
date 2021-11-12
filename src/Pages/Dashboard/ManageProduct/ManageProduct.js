@@ -13,7 +13,7 @@ const ManageProduct = () => {
     const { user } = useAuth()
     const [orders, setOrders] = useState([])
     useEffect(() => {
-        const url = `http://localhost:5000/cars`;
+        const url = `https://frozen-coast-33750.herokuapp.com/cars`;
         fetch(url)
             .then(res => res.json())
             .then(data => setOrders(data))
@@ -21,7 +21,7 @@ const ManageProduct = () => {
     }, [])
     const handleDelete = (e, id) => {
         if (window.confirm("Are you sure! Do you want to delete this order?")) {
-            const url = `http://localhost:5000/cars/${id}`;
+            const url = `https://frozen-coast-33750.herokuapp.com/cars/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

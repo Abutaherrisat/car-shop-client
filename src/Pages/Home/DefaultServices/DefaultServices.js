@@ -6,7 +6,7 @@ import DefaultService from '../DefaultService/DefaultService'
 const DefaultServices = () => {
     const [services,setServices] = useState([])
     useEffect(()=>{
-        fetch('http://localhost:5000/cars')
+        fetch('https://frozen-coast-33750.herokuapp.com/cars')
         .then(res => res.json())
         .then(data =>setServices(data))
 

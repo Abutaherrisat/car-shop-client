@@ -15,7 +15,7 @@ const ManageAllOrder = () => {
     const [status, setStatus] = useState("");
     useEffect(() => {
         
-        fetch('http://localhost:5000/allorders')
+        fetch('https://frozen-coast-33750.herokuapp.com/allorders')
             .then(res => res.json())
             .then(data => setOrders(data))
 
@@ -26,7 +26,7 @@ const ManageAllOrder = () => {
     }
     const handleDelete = (e, id) => {
         if (window.confirm("Are you sure! Do you want to delete this order?")) {
-            const url = `http://localhost:5000/orders/${id}`;
+            const url = `https://frozen-coast-33750.herokuapp.com/orders/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -42,7 +42,7 @@ const ManageAllOrder = () => {
     const handleUpdate = (order, id) => {
         order.status = status;
         if (window.confirm("Are you sure! Do you want to update this order?")) {
-            fetch( `http://localhost:5000/orders/${id}`, {
+            fetch( `https://frozen-coast-33750.herokuapp.com/orders/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'

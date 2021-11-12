@@ -6,7 +6,7 @@ import './AddCar.css'
 const AddCar = () => {
     const { register, handleSubmit,reset } = useForm();
     const onSubmit = data =>{
-         axios.post('http://localhost:5000/addservice',data)
+         axios.post('https://frozen-coast-33750.herokuapp.com/addservice',data)
          .then(res =>{
              if(res.data.insertedId){
                  alert('Service has been added successfully')

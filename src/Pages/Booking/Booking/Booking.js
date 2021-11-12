@@ -26,7 +26,7 @@ const Booking = () => {
 
   }
   useEffect(() => {
-    fetch(`http://localhost:5000/cars/${serviceId}`)
+    fetch(`https://frozen-coast-33750.herokuapp.com/cars/${serviceId}`)
       .then(res => res.json())
       .then(data => setService(data))
 
@@ -38,7 +38,7 @@ const Booking = () => {
       email:user.email,
       carName:name,
     }
-    fetch('http://localhost:5000/orders',{
+    fetch('https://frozen-coast-33750.herokuapp.com/orders',{
       method:'POST',
       headers:{
         'content-type':'application/json'
