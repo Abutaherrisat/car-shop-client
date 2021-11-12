@@ -1,0 +1,19 @@
+.banner-container {
+
+    width: 100%;
+    height: 500px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiFV7cGMtnHj40-b_McJBxOcWjsV8xkh7hag&usqp=CAU");
+    background-size: cover;
+    opacity: 1;
+    visibility: inherit;
+    z-index: 20;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .row{
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .text-color{
+    color: lightgoldenrodyellow!important;
+  }
