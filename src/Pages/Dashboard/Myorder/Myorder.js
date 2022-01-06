@@ -8,6 +8,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { Button } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const Myorder = () => {
     const { user } = useAuth()
@@ -47,6 +48,7 @@ const Myorder = () => {
                             <TableCell align="right">Car Name</TableCell>
                             <TableCell align="right">Phone</TableCell>
                             <TableCell align="right">Action</TableCell>
+                            <TableCell align="right">Payment</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -62,8 +64,12 @@ const Myorder = () => {
                                 <TableCell align="right">{order.address}</TableCell>
                                 <TableCell align="right">{order.carName}</TableCell>
                                 <TableCell align="right">{order.number}</TableCell>
-                                <TableCell align="right">  <Button style={{background:'red',color:'white',margin:'8px'}} onClick={(e) => handleDelete(e, order._id)} variant="contained" color="inherit">Delete</Button></TableCell>
-                              
+                                <TableCell align="right">  <Button style={{ background: 'red', color: 'white', margin: '8px' }} onClick={(e) => handleDelete(e, order._id)} variant="contained" color="inherit">Delete</Button></TableCell>
+                                <TableCell align="right">{order.payment ? 'paid' :
+                                    <Link to={`/dashboard/payment/${order._id}`}> <Button style={{ background: 'blue', color: 'white', margin: '8px' }}>Pay</Button></Link>
+
+                                }</TableCell>
+
                             </TableRow>
                         ))}
                     </TableBody>

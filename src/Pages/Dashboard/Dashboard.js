@@ -152,7 +152,7 @@ function Dashboard(props) {
         <Route exact path={path}>
           <DashboardHome></DashboardHome>
         </Route>
-        <Route path={`${path}/payment`}>
+        <Route path={`${path}/payment/:paymentId`}>
           <Payment></Payment>
         </Route>
         <Route path={`${path}/review`}>

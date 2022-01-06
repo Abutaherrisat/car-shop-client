@@ -10,7 +10,7 @@ const Banner = () => {
         alignItems: 'center',
     }
     return (
-        <Grid  className='banner-container' container spacing={2} mt={5}>
+        <Grid  className='banner-container' container spacing={2}>
             <Grid style={{...center}} item xs={12} md={5}>
                 <Box>
                     <Typography  sx={{ color: 'white', fontWeight: 600 }} variant='h3'>

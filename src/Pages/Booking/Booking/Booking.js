@@ -37,6 +37,7 @@ const Booking = () => {
       clientName:user.displayName,
       email:user.email,
       carName:name,
+      Price:price
     }
     fetch('https://frozen-coast-33750.herokuapp.com/orders',{
       method:'POST',
@@ -125,6 +126,15 @@ const Booking = () => {
               id="standard-basic"
               type='address'
               label='Address'
+              size="small"
+            />
+            <TextField sx={{ width: '75%', m: 1 }}
+              name='price'
+              onBlur={handleOnBlur}
+              id="standard-basic"
+              type='number'
+              label='price'
+              defaultValue={price}
               size="small"
             />
             <Button sx={{ width: '75%', m: 1 }}
