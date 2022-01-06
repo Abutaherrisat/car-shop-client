@@ -10,27 +10,27 @@ const Gallery = () => {
                 <h1>OUR GALLERY</h1>
                 <Grid container spacing={1}>
                     <Grid item xs={12} sm={12} md={4}>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0GZSelHVzO-Lw9FcqDZ8onGwbJrxkqiYArg&usqp=CAU" alt="" />
+                        <img style={{height:'200px',width:'350px',objectFit:'cover'}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0GZSelHVzO-Lw9FcqDZ8onGwbJrxkqiYArg&usqp=CAU" alt="" />
 
                     </Grid>
                     <Grid item xs={12} sm={12} md={4}>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFjq0sf6PTxNoUyPlwPhPrnsSAcZDDW8EfXg&usqp=CAU" alt="" />
+                        <img  style={{height:'200px',width:'350px',objectFit:'cover'}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFjq0sf6PTxNoUyPlwPhPrnsSAcZDDW8EfXg&usqp=CAU" alt="" />
 
                     </Grid>
                     <Grid item xs={12} sm={12} md={4}>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHMIrm5CHwXCgjtg32cf15ucf1iA-vRQO0sg&usqp=CAU" alt="" />
+                        <img style={{height:'200px',width:'350px',objectFit:'cover'}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHMIrm5CHwXCgjtg32cf15ucf1iA-vRQO0sg&usqp=CAU" alt="" />
 
                     </Grid>
                     <Grid item xs={12} sm={12} md={4}>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaUprQkYOibv2wB_Jf24eNyeLm8oyPQhWGpA&usqp=CAU" alt="" />
+                        <img style={{height:'200px',width:'350px',objectFit:'cover'}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaUprQkYOibv2wB_Jf24eNyeLm8oyPQhWGpA&usqp=CAU" alt="" />
 
                     </Grid>
                     <Grid item xs={12} sm={12} md={4}>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRDTRJ8olXNuu5OAjulUH4AA5NE0a7WEUXJA&usqp=CAU" alt="" />
+                        <img style={{height:'200px',width:'350px',objectFit:'cover'}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRDTRJ8olXNuu5OAjulUH4AA5NE0a7WEUXJA&usqp=CAU" alt="" />
 
                     </Grid>
                     <Grid item xs={12} sm={12} md={4}>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR53HZ1CG3KEc435zQSlaqGBye_-wiJGGOIXQ&usqp=CAU" alt="" />
+                        <img style={{height:'200px',width:'350px',objectFit:'cover'}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR53HZ1CG3KEc435zQSlaqGBye_-wiJGGOIXQ&usqp=CAU" alt="" />
 
                     </Grid>
                 </Grid>

@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <Grid style={{ backgroundColor: "#423A38", color: "white",marginTop:'25px' }} container spacing={1}>
+            <Grid style={{ backgroundColor: "#0D1B29", color: "white",marginTop:'25px',display:'flex',justifyContent:'space-between',alignItems:'center',paddingLeft:'30px' }} container spacing={1}>
                 <Grid item={true} xs={12} sm={12} md={3}>
                     <h2>CAR POINT</h2>
                     <p> Level-4, 34, Awal Centre, Banani, Dhaka</p>

@@ -46,7 +46,7 @@ function Dashboard(props) {
     };
 
     const drawer = (
-        <div>
+        <div style={{backgroundColor:"black",width:"100wh",height:"100%"}}>
             <Toolbar />
             <Divider />
             <Container>
